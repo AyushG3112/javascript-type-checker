@@ -13,6 +13,10 @@ class Checker {
       && !isNaN(argument);
   }
 
+  isError(argument) {
+    return Object.prototype.toString.call(argument) === '[object Error]';
+  }
+
   isString(argument) {
     return Object.prototype.toString.call(argument) === '[object String]';
   }
