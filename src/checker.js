@@ -35,7 +35,8 @@ class Checker {
 
   isEmptyObject(argument) {
     if(!this.isObject(argument)) {
-      throw new Error('Argument is not an object');
+      console.warn('Argument is not an object');
+      return false;
     } else {
       return Object.getOwnPropertyNames(argument).length === 0;
     }
@@ -43,7 +44,8 @@ class Checker {
 
   isEmptyArray(argument) {
     if(!this.isArray(argument)) {
-      throw new Error('Argument is not an array');
+      console.warn('Argument is not an array');
+      return false;
     } else {
       return argument.length === 0;
     }
@@ -51,7 +53,8 @@ class Checker {
 
   isArrayOfEmptyArrays(argument) {
     if(!this.isArray(argument)) {
-      throw new Error('Argument is not an array');
+      console.warn('Argument is not an array');
+      return false;
     } else {
       let isEmpty = a => Array.isArray(a) && a.every(isEmpty);
       return isEmpty(argument);
