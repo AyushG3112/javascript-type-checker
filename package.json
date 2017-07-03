@@ -1,0 +1,28 @@
+{
+  "name": "javascript-type-checker",
+  "version": "0.1.0",
+  "description": "Utility to validate or fetch type of given argument in javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush Gupta",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyushG3112/javascript-type-checker.git"
+  },
+  "keywords": [
+    "type",
+    "number",
+    "array",
+    "string",
+    "object",
+    "check",
+    "boolean"
+  ],
+  "bugs": {
+    "url": "https://github.com/AyushG3112/javascript-type-checker/issues"
+  },
+  "homepage": "https://github.com/AyushG3112/javascript-type-checker#readme"
+}
