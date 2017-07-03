@@ -59,13 +59,10 @@ class Checker {
   }
 
   getType(argument) {
-    if(!this.isNumber(argument)) {
-      return Object.prototype.toString.call(argument).split(' ')[1].slice(0,-1).toLowerCase();
-    } else if(isNaN(argument)) {
+    if(Number.isNaN(argument)) {
       return 'NaN';
-    } else {
-      return Object.prototype.toString.call(argument).split(' ')[1].slice(0,-1).toLowerCase();
     }
+    return Object.prototype.toString.call(argument).split(' ')[1].slice(0,-1).toLowerCase();
   }
 }
 
