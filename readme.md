@@ -1,5 +1,5 @@
-# node-unique-id-generator
-A npm module to generate Unique ID and GUID for node.
+# javascript-type-checker
+A NPM module to validate or fetch type of given argument in javascript.
 
 Table of Contents
 =================
